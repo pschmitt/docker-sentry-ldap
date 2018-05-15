@@ -7,7 +7,7 @@ then
 cat << EOF >> "$CONFIG_FILE"
 from split_settings.tools import optional, include
 include(
-    optional('/config/ldap.conf.py')
+    optional('/config/*.py')
 )
 EOF
 fi
